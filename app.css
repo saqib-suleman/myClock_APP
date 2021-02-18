@@ -1,5 +1,5 @@
 body {
-    background-color: #8ecae6;
+    background-color: #d0e7f9;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -11,15 +11,94 @@ body {
 .clock {
     height: 30rem;
     width: 30rem;
-    background-color: #1d3557;
+    background: rgb(32,35,54);
+    background: linear-gradient(0deg, rgba(32,35,54,1) 24%, rgba(60,78,159,1) 100%, rgba(0,212,255,1) 100%);
     border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 {
+    height: 13rem;
+    width: 13rem;
+    background-color: #363b59;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -3px -4px 15px 4px rgba(0,0,0,0.75);
 }
 
 .circle1 {
-    height: 5rem;
-    width: 5rem;
-    background-color: red;
-    z-index: 10;
-
-
+    height: 9rem;
+    width: 9rem;
+    background-color: #161825;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.center2 {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center1{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #cac6df;
+    box-shadow: -1px -1px 10px 1px rgba(0,0,0,0.75);
+}
+
+.barGreen{
+    background-color: #8cf694;
+    height: 20rem;
+    width: 1.5rem;
+    position: absolute;
+    left: 60rem;
+    border-radius: 10px;
+}
+
+.barRed{
+    background-color: #f26259;
+    height: 20rem;
+    width: 1.5rem;
+    position: absolute;
+    right: 60rem;
+    border-radius: 10px;
+}
+
+.barYellow{
+    background-color: #fff05f;
+    height: 10rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 5rem;
+    border-radius: 10px;
+    transform: rotate(90deg);
+}
+
+.barBlue{
+    background-color: #5daeff;
+    height: 10rem;
+    width: 1.5rem;
+    position: absolute;
+    bottom: 3.8rem;
+    border-radius: 10px;
+    transform: rotate(90deg);
+}
+
+.dialLines{
+    background-color: #525b9d;
+    width: 10rem;
+    height: 10rem;
+}
+
