@@ -1,0 +1,25 @@
+body {
+    background-color: #8ecae6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    height: 30rem;
+    width: 30rem;
+    background-color: #1d3557;
+    border-radius: 20%;
+}
+
+.circle1 {
+    height: 5rem;
+    width: 5rem;
+    background-color: red;
+    z-index: 10;
+
+
+}
