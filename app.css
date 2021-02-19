@@ -32,10 +32,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     box-shadow: -3px -4px 15px 4px rgba(0,0,0,0.75);
 }
 
@@ -48,11 +44,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-   
 }
 
 .center2 {
@@ -63,10 +54,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     z-index: 5;
 }
 
@@ -143,69 +130,35 @@ body {
 .number10 {--rotation: 300deg;}
 .number11 {--rotation: 330deg;}
 
-/* .dialLines{
-    background-color: #525b9d;
-    background-color: red;
-    width: 0.4rem;
-    height: 1.5rem;
-    border-radius: 10px;
-    position: absolute;
-    top: 4rem;
-    transform: rotate(30deg);
-    --rotation: 0deg;
-    transform: rotate(var(--rotation));
-
-} */
-
-
-
-.hourHand{
-    /* --rotation: 30deg; */
-    background-color: white;
-    height: 7rem;
-    width: 1rem;
+.hand{
     position: absolute;
     left: 50%;
     bottom: 50%;
     transform-origin: bottom;
-    /* transform: rotate(var(--rotation)); */
     border: 1px solid black;
     border-radius: 20px;
     --rotation: 0;  
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.hourHand{
+    background-color: white;
+    height: 7rem;
+    width: 1rem;
     z-index: 2;
 }
 
 .minuteHand{
-    /* --rotation: 60deg; */
     background-color: white;
     height: 10rem;
     width: 1rem;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform-origin: bottom;
-    /* transform: rotate(var(--rotation)); */
-    border: 2px solid black;
-    border-radius: 20px;
-    --rotation: 0; 
-    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
     z-index: 1;
 
 }
 
 .secondHand{
-    /* --rotation: 90deg; */
     background-color: red;
     height: 12rem;
     width: 0.2rem;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform-origin: bottom;
-    /* transform: rotate(var(--rotation)); */
-    border-radius: 20px; 
-    --rotation: 0;    
-    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
     z-index: 3;
 }
