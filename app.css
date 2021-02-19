@@ -21,6 +21,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 57px 43px 26px 13px rgba(0,0,0,0.75);
 }
 
 .circle2 {
@@ -83,50 +84,40 @@ body {
     z-index: 4;
 }
 
-.barGreen{
-    background-color: #8cf694;
+.bar {
     height: 20rem;
     width: 1.5rem;
     position: absolute;
-    right: 1rem;
-    top: 5rem;
     border-radius: 10px;
     box-shadow: inset 0px 1px 8px 1px rgba(0,0,0,0.75);
+}
+
+.barGreen{
+    background-color: #89fc00;
+    right: 1rem;
+    top: 5rem;
 }
 
 .barRed{
-    background-color: #f26259;
-    height: 20rem;
-    width: 1.5rem;
-    position: absolute;
+    background-color: red;
     left: 1rem;
     top: 5rem;
-    border-radius: 10px;
-    box-shadow: inset 0px 1px 8px 1px rgba(0,0,0,0.75);
+  
 }
 
 .barYellow{
-    background-color: #fff05f;
-    height: 20rem;
-    width: 1.5rem;
-    position: absolute;
+    background-color: yellow;
     bottom: 18rem;
     left: 14.2rem;
-    border-radius: 10px;
     transform: rotate(90deg);
-    box-shadow: inset 0px 1px 8px 1px rgba(0,0,0,0.75);
+    
 }
 
 .barBlue{
-    background-color: #5daeff;
-    height: 20rem;
-    width: 1.5rem;
-    position: absolute;
+    background-color: #0496ff;
     top: 18rem;
     left: 14.2rem;
-    border-radius: 10px;
     transform: rotate(90deg);
-    box-shadow: inset 0px 1px 8px 1px rgba(0,0,0,0.75);
 }
 
 .number {
