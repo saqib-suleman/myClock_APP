@@ -131,17 +131,22 @@ body {
 
 /* .dialLines{
     background-color: #525b9d;
+    background-color: red;
     width: 0.4rem;
     height: 1.5rem;
-    position: absolute;
     border-radius: 10px;
+    position: absolute;
     top: 4rem;
     transform: rotate(30deg);
+    --rotation: 0deg;
+    transform: rotate(var(--rotation));
+
 } */
 
 
 
 .hourHand{
+    /* --rotation: 30deg; */
     background-color: white;
     height: 7rem;
     width: 1rem;
@@ -149,27 +154,32 @@ body {
     left: 50%;
     bottom: 50%;
     transform-origin: bottom;
+    /* transform: rotate(var(--rotation)); */
     border-radius: 20px;
-    transform: translateX(-50%);
+    --rotation: 0;  
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
     z-index: 2;
 }
 
 .minuteHand{
-    background-color: violet;
+    /* --rotation: 60deg; */
+    background-color: white;
     height: 10rem;
     width: 1rem;
     position: absolute;
     left: 50%;
     bottom: 50%;
     transform-origin: bottom;
-    transform: rotate(30deg);
+    /* transform: rotate(var(--rotation)); */
     border-radius: 20px;
-    transform: translateX(-50%);
+    --rotation: 0; 
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
     z-index: 1;
 
 }
 
 .secondHand{
+    /* --rotation: 90deg; */
     background-color: red;
     height: 12rem;
     width: 0.2rem;
@@ -177,8 +187,9 @@ body {
     left: 50%;
     bottom: 50%;
     transform-origin: bottom;
-    transform: rotate(60deg);
-    border-radius: 20px;    
-    transform: translateX(-50%);
+    /* transform: rotate(var(--rotation)); */
+    border-radius: 20px; 
+    --rotation: 0;    
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
     z-index: 3;
 }
