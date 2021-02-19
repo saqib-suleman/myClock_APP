@@ -129,6 +129,29 @@ body {
     box-shadow: inset 0px 1px 8px 1px rgba(0,0,0,0.75);
 }
 
+.number {
+    --rotation: 0;
+    transform: rotate(var(--rotation));
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    color: #525b9d;
+    font-size: 1.5rem;
+}
+
+.number1 {--rotation: 30deg;}
+.number2 {--rotation: 60deg;}
+.number3 {--rotation: 90deg;}
+.number4 {--rotation: 120deg;}
+.number5 {--rotation: 150deg;}
+.number6 {--rotation: 180deg;}
+.number7 {--rotation: 210deg;}
+.number8 {--rotation: 240deg;}
+.number9 {--rotation: 270deg;}
+.number10 {--rotation: 300deg;}
+.number11 {--rotation: 330deg;}
+
 /* .dialLines{
     background-color: #525b9d;
     background-color: red;
@@ -155,6 +178,7 @@ body {
     bottom: 50%;
     transform-origin: bottom;
     /* transform: rotate(var(--rotation)); */
+    border: 1px solid black;
     border-radius: 20px;
     --rotation: 0;  
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
@@ -171,6 +195,7 @@ body {
     bottom: 50%;
     transform-origin: bottom;
     /* transform: rotate(var(--rotation)); */
+    border: 2px solid black;
     border-radius: 20px;
     --rotation: 0; 
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
